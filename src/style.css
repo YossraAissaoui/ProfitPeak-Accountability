@@ -1,0 +1,177 @@
+/**
+ * CSS of ToDo App
+ * Green: #4CAF4F
+ * Yellow: #FFC801
+ *palette
+ *white: #fff;
+ *black: #000;
+ *gray: #f2f2f2;
+ * white griyech: E6EDE6;
+ *normal-yellow: #cab605;
+ *normal-yellow-hover: #b6a405;
+ *PCgreen-50: #e6ede6;
+ *PCgreen-200: #8aaa8a;
+ *PCgreen-300: #548454;
+ *PCgreen-400: #336c33;
+ *PCgreen-500: #004700;
+ *green old for table: #B0C6B0;
+ *
+ * Blue: #29b6f6
+ * Orange: #ff9800
+ *background old color #fcfcfc
+ *new palette
+ *text color green : #004700
+ *submit button green : #336C33
+ *tasks box green color : #B0C6B0 in class card was white
+ *background color : #E9E9E9
+ *font heading 6 Helvetica 32px
+ * ktiba create task author black : #161616 size 24px
+ * ktiba tableau tasks author black : #161616 size 20px ken 14
+ * body by default color: #333;
+ */
+
+/**
+ * HTML elements 
+ */
+
+/* image style logo img*/
+/*body {
+  position: relative;
+}*/
+
+/*body img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 15px;
+}*/
+
+
+ body {
+    background-color: #E9E9E9;
+    font-size: 20px;
+    color: #161616;
+  }
+  table {
+
+    border-color: #161616; 
+    
+}
+
+.table {
+  --bs-table-color-type: initial;
+  --bs-table-bg-type: initial;
+  --bs-table-color-state: initial;
+  --bs-table-bg-state: initial;
+  --bs-table-color: var(--bs-emphasis-color);
+  --bs-table-bg: #e6ede6; /* Change the background color here */
+}
+  footer {
+    background-color: #004700;
+    color: white;
+    padding: 25px 15px;
+  }
+  
+  footer a {
+   color: black;
+   font-weight: bold;
+  }
+  
+  /**
+   * Generic Styles 
+   */
+  .green {
+    color: #004700;
+  }
+  .form-control {
+    background-color: #E9E9E9;
+    border-color: #4C4C4C;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);;
+  }
+  .form-control:focus{
+    background-color: #E9E9E9;
+    border-color: #4C4C4C;
+    box-shadow: 0 0 0 3px #B0C6B0;
+  }
+  
+  /* Inspiration: Google material design */
+  /*.card {
+    background-color: white;
+    border-radius: 2px;
+    padding: 0 15px 15px 15px;
+    margin-bottom: 25px;
+    webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 
+                       0 1px 5px 0 rgba(0,0,0,0.12), 
+                       0 3px 1px -2px rgba(0,0,0,0.2);
+  
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 
+                0 1px 5px 0 rgba(0,0,0,0.12), 
+                0 3px 1px -2px rgba(0,0,0,0.2);
+  }*/
+  .card2 {
+    background-color: #e6ede6;
+    border-radius: 10px;
+    border: 1px solid #4C4C4C;
+    padding: 0 15px 15px 15px;
+    margin-bottom: 25px;
+    webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 
+                       0 1px 5px 0 rgba(0,0,0,0.12), 
+                       0 3px 1px -2px rgba(0, 0, 0, 0.507);
+  
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 
+                0 4px 8px 0 rgba(0,0,0,0.1), 
+                0 0px 2px rgba(0,0,0,0.1);
+  }
+  
+  .task-done {
+    text-decoration: line-through;
+    background-color: #eee;
+  }
+  
+  .btn-primary {
+    text-decoration-color: #e6ede6;
+    background-color: #336C33;
+    border-color: #336C33;
+  }
+  
+  .btn-primary:hover {
+    background-color: #004700;
+    border-color: #004700;
+  }
+  
+  .btn-primary:active {
+    background-color: #004700;
+    border-color: #004700;
+  }
+  
+  .btn-primary:focus {
+    background-color: #004700 !important;
+    border-color: #004700;
+  }
+  
+  /**
+   * Components 
+   */
+  
+  /* By default the message wrapper is hidden
+   * It is displayed only when there is a message
+   * to be shown
+   */
+  #message-wrapper {
+    display: none;
+  }
+  
+  #page-header {
+    margin-top: 0;
+    margin-bottom: 25px;
+    background: #004700;
+    color: white;
+    border-bottom: none;
+    webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 
+                       0 1px 5px 0 rgba(0,0,0,0.12), 
+                       0 3px 1px -2px rgba(0,0,0,0.2);
+  
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 
+                0 1px 5px 0 rgba(0,0,0,0.12), 
+                0 3px 1px -2px rgba(0,0,0,0.2);
+  }
